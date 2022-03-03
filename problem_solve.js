@@ -56,3 +56,25 @@ const duplicates = numbers.filter(function (value, index, array) {
     return array.indexOf(value) !== index
 });
 console.log(duplicates);
+
+//problem-7 " reverse a given string."
+
+function stringReverse(str) {
+    return str.split("").reverse().join("");
+}
+
+console.log(stringReverse("friends"));
+console.log(stringReverse("job"));
+console.log(stringReverse("JavaScript"));
+
+//problem-8 "extract the first half of a string of even length."
+
+function firstHalf(str) {
+    if (str.length % 2 == 0) {
+        return str.slice(0, str.length / 2);
+    }
+    return str;
+}
+console.log(firstHalf("Python"));
+console.log(firstHalf("JavaScript"));
+console.log(firstHalf("PHP"));
