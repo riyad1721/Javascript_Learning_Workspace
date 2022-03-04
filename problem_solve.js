@@ -77,4 +77,4 @@ function firstHalf(str) {
 }
 console.log(firstHalf("Python"));
 console.log(firstHalf("JavaScript"));
-console.log(firstHalf("PHP"));
+console.log(firstHalf("PHP")); 
