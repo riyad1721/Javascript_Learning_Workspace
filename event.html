@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <h1 onclick="console.log('h1 is clicked')">working with event</h1>
+    <button onclick="alert(7)">Click</button>
+    <button onclick="document.body.style.backgroundColor='yellow'">Color change: yellow
+    </button>
+    <button onclick="makeRed()">Color change: Red</button>
+    <button id="make-blue-button">Color change: Blue</button>
+    <button id="make-green-button">Color change: Green</button>
+    <button id="make-goldenrod">Color change: Golden rod</button>
+
+
+    <script>
+        function makeRed() {
+            document.body.style.backgroundColor = 'red';
+        }
+        const blueButton = document.getElementById('make-blue-button');
+
+        blueButton.onclick = makeBlue;
+        function makeBlue() {
+            document.body.style.backgroundColor = 'blue';
+        }
+        const greenButton = document.getElementById('make-green-button');
+
+        greenButton.onclick = function () {
+            document.body.style.backgroundColor = 'green';
+        }
+
+        const goldenRoad = document.getElementById('make-goldenrod');
+        goldenRoad.addEventListener('click', makeRoad)
+
+        function makeRoad() {
+            document.body.style.backgroundColor = 'goldenrod';
+        }
+
+    </script>
+</body>
+
+</html>
