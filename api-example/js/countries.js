@@ -33,9 +33,11 @@ const loadCountryByName = name => {
 const displayCountryDetail = country => {
     console.log(country);
     const countryDiv = document.getElementById('country-detail');
+
     countryDiv.innerHTML = `
         <h5>${country.name}</h4>
         <p>population: ${country.population}</p>
         <img width="200px" src="${country.flag}">
-    `
+    `;
+
 }
